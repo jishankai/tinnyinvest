@@ -1,0 +1,16 @@
+/*2017-8-28*/
+.culture_banner img{
+	width: 100%;
+}
+.culture ul{
+	padding: 8rem 0 0 0;
+}
+.culture ul li{
+	padding: 0;
+}
+.culture ul p{
+	font-size: 1.6rem;
+    font-family: "microsoft yahei";
+    color: #333;
+    padding: 1rem 2rem;
+}

@@ -1,0 +1,219 @@
+/*2017/8/23*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+i {
+	font-style: normal;
+}
+
+b {
+	font-weight: normal;
+}
+
+li {
+	list-style: none;
+}
+h3{
+	margin: 0;
+}
+
+.clearfix {
+    display: block;
+    min-height: 1%;
+    zoom: 1;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.tianniTitle{
+	text-align: center;
+	margin: 6rem 0 3rem 0;
+}
+.tianniTitle span{
+	font-size: 2.5rem;
+	color: #000;
+	font-weight: bold;
+	font-family: "microsoft yahei";
+	position: relative;
+}
+.tianniTitle span:before{
+    display: block;
+    width: 9rem;
+    height: 2rem;
+    content: "";
+    background: url(../img/leftLine.png) no-repeat center;
+    position: absolute;
+    left: -10rem;
+    bottom: -0.2rem;
+  
+}
+.tianniTitle span:after{
+    display: block;
+    width: 9rem;
+    height: 2rem;
+    content: "";
+    background: url(../img/rightLine.png) no-repeat center;
+    position: absolute;
+    bottom: -0.3rem;
+    left: 9.3rem;
+}
+.newTo-top{
+	cursor: pointer;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: url(../img/newTo-top.png) no-repeat;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    right: 7%;
+    top: 50%;
+}
+
+
+/*顶部导航start
+*/
+
+.nav_content {
+	width: 63.1%;
+	margin: 0 auto;
+	height: 70px;
+	background: url(../img/logo.png)no-repeat left center;
+}
+
+.nav_list {
+	float: right;
+	margin-bottom: 0;
+}
+
+.nav_list>li {
+	height: 70px;
+	line-height: 70px;
+	float: left;
+	padding: 0 0.5rem;
+	margin: 0 2rem;
+}
+
+.nav_list>li:last-child {
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.nav_list li a {
+	font-size: 1.6rem;
+	font-family: "microsoft yahei";
+	color: #333;
+	text-decoration: none;
+}
+
+.nav_list li a.active {
+	color: #d9a70e;
+}
+
+.triangle-down {
+	display: inline-block;
+	float: right;
+	margin: 1.2rem 0 0 1rem;
+}
+
+.triangle-down i {
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 7px solid #222;
+}
+
+.nav_content {
+	position: relative;
+}
+
+.slider_box {
+	position: absolute;
+	top: 70px;
+	right: -2%;
+	z-index: 9999;
+	width: 25%;
+	display: none;
+}
+
+.slider_box li a {
+	color: #fff;
+	font-size: 14px;
+	display: block;
+	width: 100%;
+	text-align: center;
+	height: 3rem;
+	line-height: 3rem;
+	background-color: rgba(138, 109, 59, 0.65);
+	border-bottom: 1px solid #ccc;
+}
+
+.nav_mobile {
+	display: none;
+}
+.nav_box{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: #fff;
+	z-index: 9999;
+    border-bottom: 1px solid #8a6d3b;
+}
+.hidden_cont{
+	height: 70px;
+}
+
+/*底部导航样式*/
+.footer_cont{
+	width: 50%;
+	margin: 0 auto;
+}
+.footer_cont p{
+	float: left;
+	text-align: center;
+	margin-bottom: 0;
+	margin: 0 auto;
+}
+.footer_cont .ewm{
+	width: 30%;
+}
+.footer{
+	background-color: #333;
+	padding: 4rem 0;
+	margin-top: 8rem;
+}
+.footer_cont .info span{
+	font-size: 1.8rem;
+	color: #fff;
+	font-family: "microsoft yahei";
+	line-height: 3.4rem;
+}
+.footer_cont .info span:first-child{
+	margin-right: 5rem;
+}
+.footer_cont .info{
+	margin-top: 1.6rem;
+	width: 70%;
+}
+
+.footer_cont .ewm b{
+	color: #dfa440;
+	font-size: 1.8rem;
+	display: block;
+	margin-top: 1rem;
+}
+/*媒体查询样式*/

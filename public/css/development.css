@@ -1,0 +1,65 @@
+.development_banner img{
+	width: 100%;
+}
+.development_history .container {
+	padding: 0;
+	margin-top: 6rem;
+	box-shadow:0 0 1rem rgba(0, 0, 0, 0.38);
+	border-radius: 0.4rem;
+}
+.development_history p b{
+    display: block;
+    color: #d09d00;
+    font-size: 2.2rem;
+    font-family: "microsoft yahei";
+    font-weight: bold;
+}
+.development_history p span{
+    color: #595653;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 2.2rem;
+    display: block;
+   
+}
+.development_history .cont img{
+	display: block;
+	margin: 0 auto;
+}
+.development_history .cont{
+	position: relative;
+}
+.development_history .cont p{
+	position: absolute;
+}
+.development_history .cont p:nth-child(2){
+    top: 23%;
+    left: 54%;
+}
+.development_history .cont p:nth-child(3){
+    top: 40%;
+    right: 55%;
+    text-align: right;
+}
+.development_history .cont p:nth-child(4){
+    top: 61.2%;
+    left: 54.5%;
+}
+.development_history .cont p:nth-child(5){
+    top: 78%;
+    right: 55%;
+    text-align: right;
+}
+.development_history .cont p:nth-child(6){
+    top: 95%;
+    left: 54%;
+    text-align: right;
+}
+.development_history .prompt{
+    text-align: center;
+    font-size: 2.1rem;
+    margin: 2rem 0 7rem 0;
+    font-family: "microsoft yahei";
+    font-weight: bold;
+    color:#d09d00;
+}

@@ -1,0 +1,131 @@
+/*.banner_box img{
+	width: 100%;
+}*/
+
+.banner_box {
+	position: relative;
+}
+
+.banner_info {
+	position: absolute;
+	top: 12%;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	color: #fff;
+}
+
+.banner_info h4,
+.banner_info h4 b {
+	font-size: 4.6rem;
+	font-family: "microsoft yahei";
+	font-weight: bold;
+	letter-spacing: 0.3rem;
+}
+
+.banner_info h4 b {
+	color: #debd59;
+	font-size: 5.8rem;
+}
+
+.banner_info p {
+	font-size: 1.6rem;
+	font-family: "microsoft yahei";
+	width: 43%;
+	margin: 2rem auto;
+	padding: 2.4rem;
+	border: 1px solid #ccc;
+	/*产品要素*/
+}
+
+.product_ele .contacts {
+	margin: 7rem 0 4rem 0;
+}
+
+.product_ele .contacts span {
+	color: #888888;
+	font-size: 1.9rem;
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+	border-right: 0.3rem solid #dbb542;
+	display: inline-block;
+	padding: 0 2rem 0 0.5rem;
+	line-height: 3rem;
+	float: left;
+}
+
+.product_ele .contacts b {
+	color: #c99802;
+	font-size: 2.5rem;
+	display: inline-block;
+	line-height: 6rem;
+	height: 6rem;
+	float: left;
+	margin-left: 2rem;
+}
+
+body {
+	background-color: #F0F0F0;
+}
+
+.product_ele .contacts_list {
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+}
+
+.contacts_list .left {
+	font-size: 3rem;
+	color: #fff;
+	padding: 26.5rem 3rem;
+	text-align: center;
+	font-weight: bold;
+	background-color: #dbb542;
+	line-height: 5rem;
+}
+.contacts_list .left i{
+    transform: rotate(90deg);
+    display: block;
+}
+
+.contacts_list .right {
+	padding: 0;
+}
+
+.contacts_list .right b {
+	display: block;
+	float: left;
+	font-size: 1.55rem;
+	font-weight: bold;
+	width: 20%;
+	border-right: 0.4rem solid #F0F0F0;
+	font-family: "microsoft yahei";
+	padding-left: 6rem;
+	height: 100%;
+}
+
+.contacts_list .right span {
+	display: block;
+	float: left;
+	font-size: 1.5rem;
+	width: 80%;
+	padding-left: 5rem;
+	color: #333;
+	font-family: "microsoft yahei";
+}
+
+.contacts_list .right p {
+	margin-bottom: 0;
+	height: 5rem;
+}
+
+.contacts_list .right p:last-child b,
+.contacts_list .right p:last-child span {
+	padding-bottom: 3rem;
+}
+.contacts_list .right p:first-child b,
+.contacts_list .right p:first-child span {
+	padding-top: 3rem;
+}
+.contacts_list .right p:first-child{
+	height: 8rem;
+}
