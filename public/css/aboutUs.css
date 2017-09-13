@@ -4,22 +4,25 @@
 .container{
 	padding: 0;
 }
-
+.company_profile{
+	margin-top: -14rem;
+}
 .company_profile p{
 	padding: 2rem 0 5rem 0;
-	font-size: 1.54rem;
+	font-size: 1.62rem;
 	font-family: "microsoft yahei";
-	color: #333;
+	color: #fff;
 	line-height: 2.6rem;
+	padding: 0 2rem;
 }
-.team{
+/*.team{
 	background-color:#f0f0f0 ;
-}
+}*/
 .team ul{
 	margin-top: 8rem;
 }
 .team li{
-	background-color: #fff;
+	background-color: #62a3e4;
 	box-shadow:0 0 1.8rem rgba(0, 0, 0, 0.08);
 	border-radius: 0.4rem;
 	margin-bottom: 8rem;
@@ -39,7 +42,7 @@
 .team li .col-md-9 i,.team li .col-md-3 i{
 	font-size: 1.7rem;
 	font-family: "microsoft yahei";
-	color: #cbaa44;
+	color: #ffe63e;
 	line-height: 2rem;
 	border-bottom: 1px solid  #d6c5ac;
 	}
@@ -49,10 +52,11 @@
     display: block;
     padding: 2rem 0 0.6rem 0;
     font-family: "microsoft yahei";
+    color: #fff;
 }
 .team li .col-md-9 span{
     display: block;
-    color: #666;
+    color: #fff;
     font-size: 1.48rem;
     font-family: "microsoft yahei";
     line-height: 2.2rem;
@@ -82,15 +86,13 @@
 .our_point li span{
 	font-family: "microsoft yahei";
 	font-size: 1.7rem;
-	color: #777;
+	color: #fff;
 	line-height: 3rem;
 }
 .our_point .tianniTitle{
 	margin-bottom: 7rem;
 }
-.our_point .tianniTitle span:after{
-	left: 11.3rem;
-}
+
 .our_point p{
 	text-align: center;
 	margin-top: 4rem;
@@ -107,11 +109,98 @@
     margin: 1rem 1rem 0 0;
 }
 .our_point p span b{
-    border-bottom: 1px solid #debd59;
+    border-bottom: 1px solid #fff;
     padding-bottom: 1rem;
     margin-left: 3rem;
     line-height: 4rem;
+    color: #fff;
 }
 
+.box{
+	background-color: #3d78b4;
+}
+.tianniTitle span{
+	color: #fff;
+}
 
-
+@media (max-width: 1200px){
+	.team li .col-md-9 span{
+		height: 16rem;
+	}
+	.company_profile{
+		margin-top: -8rem;
+	}
+}
+@media (max-width: 991px){
+	.team li .col-md-3 span{
+		display: block;
+	}
+	.team li .col-md-3 img{
+		width: 24%;
+	}
+	.team li .col-md-9{
+	padding: 0 3rem;
+	}
+	.team li .col-md-9 span{
+		height: auto;
+	}
+	.container{
+		width: 84%;
+	}
+	.team li{
+		padding-bottom: 2rem;
+	}
+	.team li .col-md-9 i,.team li .col-md-9 b{
+		display: none;
+	}
+	.our_point li{
+	    width: auto;
+	    border-bottom: 1px solid #ccc;
+	    padding: 1rem 0;
+	}
+	.our_point p span b{
+		margin-left: 0;
+	}
+	.company_profile p{
+		padding: 0;
+		font-size: 1.54rem;
+	}
+}
+@media (max-width: 767px){
+	.our_point p span{
+		width: 100%;
+		display: block;
+	}
+}
+@media (max-width: 460px){
+	.team li .col-md-9{
+		padding: 0 1rem;
+	}
+	.team li .col-md-3 img{
+		width: 30%;
+	}
+}
+@media (max-width: 414px){
+	.team li .col-md-3 span{
+		top: -22%;
+		left: 39%;
+	}
+	.team li .col-md-3 i{
+		line-height: 1rem;
+		font-size: 1.55rem;
+	}
+	.team li .col-md-3 b{
+		font-size: 1.8rem;
+		font-weight: normal;
+	}
+	.team li .col-md-3 img{
+		margin-left: 1rem;
+	}
+	.aboutus_banner img {
+    	width: 58rem;
+    	margin-left: -10rem;
+	}
+	.aboutus_banner{
+		overflow: hidden;
+	}
+}

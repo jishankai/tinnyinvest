@@ -3,19 +3,16 @@
 }
 .development_history .container {
 	padding: 0;
-	margin-top: 6rem;
-	box-shadow:0 0 1rem rgba(0, 0, 0, 0.38);
-	border-radius: 0.4rem;
 }
 .development_history p b{
     display: block;
-    color: #d09d00;
+    color: #f3d167;
     font-size: 2.2rem;
     font-family: "microsoft yahei";
     font-weight: bold;
 }
 .development_history p span{
-    color: #595653;
+    color: #fff;
     font-size: 1.6rem;
     font-weight: normal;
     line-height: 2.2rem;
@@ -61,5 +58,35 @@
     margin: 2rem 0 7rem 0;
     font-family: "microsoft yahei";
     font-weight: bold;
-    color:#d09d00;
+    color:#f3d167;
+}
+.developmentTitle{
+	display: block;
+	margin: 6rem auto 3rem auto;
+}
+.box{
+	background:url(../img/developmentBA.jpg) center;
+	background-size: auto 100%;
+}
+@media (max-width: 768px){
+	.development_history .cont{
+		width: 92%;
+		margin: 0 auto;
+	}
+	.development_history .container{
+		/*box-shadow: none;*/
+		margin-top: 0;
+	}
+	.developmentTitle{
+		width: 50%;
+	}
+}
+@media (max-width: 414px){
+	.development_banner img{
+		width: 58rem;
+    	margin-left: -17rem;
+	}
+	.development_banner{
+		overflow: hidden;
+	}
 }

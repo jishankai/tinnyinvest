@@ -10,7 +10,7 @@
 		<title>投资专家_二级市场投资_股票投资_天猊投资咨询</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common_nav.css" />
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css?2017-9-5"/>
 	</head>
 
 	<body>
@@ -48,15 +48,16 @@
 		<!--公共头部end-->
 		<!--banner图片start-->
 		<div class="banner_box">
-			<img src="img/banner_index.jpg" alt="" />
+			<img src="img/index_banner.jpg" alt="" />
 		</div>
 		<!--banner图片end-->
 		<!--标语模块start-->
 		<div class="slogan_cont">
 			<ul class="container">
-				<li class="col-md-4 col-sm-4"><img src="img/sloganIcon01.png"/><span>给客户持续稳定的<br />回报是我们的追求</span></li>
-				<li class="col-md-4 col-sm-4"><img src="img/sloganIcon02.png"/><span>保守客户秘密是<br />我们庄严的承诺</span></li>
-				<li class="col-md-4 col-sm-4"><img src="img/sloganIcon03.png"/><span>团队合作是我们<br />无往不胜的法宝</span></li>
+				<li class="col-md-3"><img src="img/sloganIcon01.png"/><span>给客户持续稳定的<br />回报是我们的追求</span></li>
+				<li class="col-md-3"><img src="img/sloganIcon02.png"/><span>保守客户秘密是<br />我们庄严的承诺</span></li>
+				<li class="col-md-3"><img src="img/sloganIcon03.png"/><span>团队合作是我们<br />无往不胜的法宝</span></li>
+				<li class="col-md-3"><img src="img/sloganIcon04.png"/><span>持续学习是我们<br />创造业绩的源泉</span></li>
 				<li class="slider"></li>
 			</ul>
 			
@@ -118,18 +119,17 @@
 			//1.我们服务模块根据列表中最大高度为准
 			var windowW=$(window).width();
 			if(windowW>991){
-				$(window).load(function(){
+				/*$(window).load(function(){
                 var arr01=[];
                 $(".service_list li").each(function (index,ele) {
                     arr01.push($(ele).height())
                 })
-                var eleH=(Math.max.apply(null, arr01));//最大值
-                /*console.log(eleH)*/
+                var eleH=(Math.max.apply(null, arr01));
                 $(".service_list li .discribtion").each(function (index,ele) {
                     $(ele).css("height",eleH+"px")
                 })
             })
-				
+				*/
 			//2.我们服务模块hover动画效果
 			$(".service_list li").hover(function(){
 				$(this).stop().animate({
@@ -143,32 +143,19 @@
 			}
 			
 			//3标语模块滑块动画
-			/*var index=0
-			var timer=null;
-			function slider(){
-				if(index<=2){
-					$(".slogan_cont .slider").stop().animate({
-					"marginLeft":index*33.33+"%"
-				},600)
-				index++
-				}if(index==3){
-					index=0
-				}
-			}
-			timer=setInterval(slider,2000)*/
-			$(".slogan_cont .col-md-4").hover(function(){
+			
+			$(".slogan_cont .col-md-3").hover(function(){
 				index=$(this).index();
 				$(".slogan_cont .slider").stop().animate({
-					"marginLeft":index*33.33+"%"
+					"marginLeft":index*25+"%"
 				},600)
-				clearInterval(timer)
 			},function(){
 				$(".slogan_cont .slider").stop().animate({
-					"marginLeft":"-33.33%"
+					"marginLeft":"-25%"
 				},600)
-				/*index=0
-				timer=setInterval(slider,2000)*/
 			})
-		})
+		
+		});
+		
 	</script>
 </html>

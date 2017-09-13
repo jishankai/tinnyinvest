@@ -14,3 +14,19 @@
     color: #333;
     padding: 1rem 2rem;
 }
+@media (max-width: 414px){
+	.culture li img{
+		width: 35%;
+    	margin-left: 2rem;
+	}
+	.culture_banner{
+		overflow: hidden;
+	}
+	.culture_banner img {
+    width: 58rem;
+    margin-left: -15rem;
+	}
+	.culture ul{
+		padding-top: 4rem;
+	}
+}

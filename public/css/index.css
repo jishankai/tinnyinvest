@@ -19,7 +19,10 @@
     text-align: center;
     padding: 1.2rem 0;
 }
-.slogan_cont li:last-child{
+.slogan_cont li:nth-child(4){
+	border: none;
+}
+.slogan_cont .slider{
 	border: none;
 }
 .slogan_cont li img{
@@ -29,20 +32,30 @@
 }
 .slogan_cont li span{
 	display: inline-block;
-    color: #a88700;
+    color: #333;
     font-family: "microsoft yahei";
     font-size: 1.7rem;
 }
 .slider{
-    width: 33.33%;
+    width: 25%;
     height: 77px;
-    background-color: rgba(231, 182, 98, 0.14);
-    margin-left: -33.33%;
+    background-color: rgba(67, 130, 255, 0.12);
+    margin-left: -25%;
 }
 
 /*我们的服务样式*/
+body{
+	background: url(../img/indexBa.jpg) no-repeat bottom center;
+}
+.tianniTitle span:before{
+    background: url(../img/leftLine01.png) no-repeat center;
+  
+}
 .tianniTitle span:after{
-	left: 11.3rem;
+    background: url(../img/rightLine01.png) no-repeat center;
+}
+.our_service{
+	margin-bottom: 19rem;
 }
 .our_service .container {
 	padding: 0;
@@ -55,6 +68,7 @@
 }
 .service_list li p{
 	box-shadow:0 0 1rem rgba(0, 0, 0, 0.58);
+	background-color: #fff;
 }
 .service_list .discribtion span{
     display: block;
@@ -65,11 +79,68 @@
     color: #666;
     font-size: 1.46rem;
     line-height: 2.2rem;
+    height: 18rem;
 }
 .service_list .discribtion b{
-	color: #c09a00;
+	color: #333;
 	font-size: 1.9rem;
 	font-family: "microsoft yahei";
 	font-weight: bold;
 }
 
+@media (max-width:1200px ){
+	.service_list .discribtion span{
+		height: 20rem;
+	}
+}
+@media (max-width:991px ) and (min-width:550px){
+	.our_service .container{
+	width: 80%;
+	}
+}
+@media (max-width: 991px){
+	.service_list li{
+		margin-bottom: 2rem;
+	}
+	.service_list .discribtion span{
+		height: auto;
+	}
+	.service_list{
+		width:85%;
+		margin:0 auto
+	}
+	.slogan_cont li{
+		border: none;
+		border-bottom: 1px solid #ccc;
+	}
+}
+@media (max-width: 767px){
+	.slider{
+		display: none;
+	}
+	.slogan_cont{
+		border: none;
+	}
+}
+@media (max-width: 414px){
+	.service_list{
+		width:100%;
+	}
+	.banner_box img {
+	    width: 53rem;
+	    margin-left: -9rem;
+	}
+	.banner_box{
+		overflow: hidden;
+		text-align: center;
+	}
+	.slogan_cont li span{
+		font-size: 1.6rem;
+	}
+}
+@media (max-width: 320px){
+	.banner_box img {
+	    width: 53rem;
+	    margin-left: -11.5rem;
+	}
+}

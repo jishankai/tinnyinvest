@@ -1,18 +1,18 @@
 /*.banner_box img{
 	width: 100%;
 }*/
-
 .banner_box {
 	position: relative;
 }
 
 .banner_info {
-	position: absolute;
+	/*position: absolute;*/
 	top: 12%;
 	left: 0;
 	text-align: center;
 	width: 100%;
 	color: #fff;
+	padding-top: 5rem;
 }
 
 .banner_info h4,
@@ -24,30 +24,30 @@
 }
 
 .banner_info h4 b {
-	color: #debd59;
+	color: #fadb7e;
 	font-size: 5.8rem;
 }
 
 .banner_info p {
-	font-size: 1.6rem;
-	font-family: "microsoft yahei";
-	width: 43%;
-	margin: 2rem auto;
-	padding: 2.4rem;
-	border: 1px solid #ccc;
+	    font-size: 1.8rem;
+    font-family: "microsoft yahei";
+    width: 59%;
+    margin: 2rem auto;
+    padding: 2.4rem 5rem;
+    border: 1px solid #ccc;
 	/*产品要素*/
 }
 
 .product_ele .contacts {
-	margin: 7rem 0 4rem 0;
+	margin: 3rem 0;
 }
 
 .product_ele .contacts span {
-	color: #888888;
+	color: #fff;
 	font-size: 1.9rem;
 	font-weight: bold;
 	letter-spacing: 0.2rem;
-	border-right: 0.3rem solid #dbb542;
+	border-right: 0.3rem solid #fff;
 	display: inline-block;
 	padding: 0 2rem 0 0.5rem;
 	line-height: 3rem;
@@ -55,7 +55,7 @@
 }
 
 .product_ele .contacts b {
-	color: #c99802;
+	color: #fff;
 	font-size: 2.5rem;
 	display: inline-block;
 	line-height: 6rem;
@@ -65,7 +65,8 @@
 }
 
 body {
-	background-color: #F0F0F0;
+	background: url(../img/productBA.jpg) no-repeat top center;
+	background-size:auto  100%;
 }
 
 .product_ele .contacts_list {
@@ -79,13 +80,13 @@ body {
 	padding: 26.5rem 3rem;
 	text-align: center;
 	font-weight: bold;
-	background-color: #dbb542;
+	background-color: #222;
 	line-height: 5rem;
 }
-.contacts_list .left i{
+/*.contacts_list .left i{
     transform: rotate(90deg);
     display: block;
-}
+}*/
 
 .contacts_list .right {
 	padding: 0;
@@ -128,4 +129,109 @@ body {
 }
 .contacts_list .right p:first-child{
 	height: 8rem;
+}
+@media (max-width: 1890px) {
+	.banner_info p {
+		width: 60%;
+		padding: 1.5rem;
+	}
+	.banner_box {
+		overflow: hidden;
+	}
+}
+
+@media (max-width: 1199px) {
+	.contacts_list .left {
+		padding: 26.5rem 2rem;
+	}
+	.contacts_list .right b{
+		padding-left: 4rem;
+	}
+}
+
+@media (max-width: 1024px) {
+	.banner_info p {
+		width: 90%;
+	}
+}
+
+@media (max-width: 991px) {
+	.contacts_list .left {
+		padding: 0rem;
+		font-size: 2.8rem;
+	}
+	.contacts_list .right b{
+		padding-left: 3rem;
+	}
+	.contacts_list .left i{
+	    transform: rotate(0deg);
+	    display: inline;
+	}
+}
+
+@media (max-width: 767px) {
+	.banner_info h4 {
+		font-size: 2.6rem;
+	}
+	.banner_info h4 b {
+		font-size: 3.6rem;
+	}
+	.banner_info p {
+		font-size: 1.5rem;
+	}
+	.product_ele .contacts_list{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.contacts_list .right b {
+	    font-size: 1.5rem;
+	    width: 30%;
+	}
+	.contacts_list .right span{
+		width: 70%;
+		padding:0 0.5rem;
+	}
+	.contacts_list .right b{
+		padding-left: 2rem;
+	}
+}
+
+@media (max-width: 414px) {
+	.banner_info {
+		top: 8%;
+	}
+	.product_ele .contacts span {
+		font-size: 1.6rem;
+		letter-spacing: 0rem;
+		padding: 0 1rem 0 0.5rem;
+		line-height: 2rem;
+	}
+	.product_ele .contacts b {
+		font-size: 2rem;
+		line-height: 4rem;
+		height: 4rem;
+		margin-left: 1rem;
+	}
+	.product_ele .contacts {
+		margin: 4rem 0;
+	}
+	.contacts_list .right p {
+		height: 6rem;
+	}
+	.contacts_list .right span{
+		font-size: 1.4rem;
+	}
+	.contacts_list .right b{
+		font-size: 1.4rem;
+	}
+	.container{
+		padding:0 5px;
+	}
+	.contacts_list .right p:first-child{
+		height: 9rem;
+	}
+	.contacts_list .right b{
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
 }

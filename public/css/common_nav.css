@@ -67,7 +67,7 @@ h3{
     background: url(../img/rightLine.png) no-repeat center;
     position: absolute;
     bottom: -0.3rem;
-    left: 9.3rem;
+    right: -10rem;
 }
 .newTo-top{
 	cursor: pointer;
@@ -120,7 +120,7 @@ h3{
 }
 
 .nav_list li a.active {
-	color: #d9a70e;
+	color: #fdde42;
 }
 
 .triangle-down {
@@ -217,3 +217,118 @@ h3{
 	margin-top: 1rem;
 }
 /*媒体查询样式*/
+@media (max-width: 1700px){
+	.footer_cont{
+		width: 80%;
+	}
+}
+@media (max-width: 1400px) {
+	.nav_content {
+		width: 86%;
+	}
+	.nav_list>li {
+		margin: 0 1rem;
+	}
+	.footer_cont .info span:first-child{
+		display: block;
+	}
+	.footer_cont .info {
+		margin-top: 1rem;
+		width: 80%;
+	}
+	
+	.footer_cont .ewm{
+		width: 20%;
+	}
+}
+@media (max-width: 1024px){
+	.newTo-top{
+		right: 1%;
+	}
+}
+@media (max-width: 860px){
+	.footer_cont{
+		width: 92%;
+	}
+	
+	
+}
+
+@media (max-width: 767px) {
+	.nav_pc {
+		display: none;
+	}
+	.nav_mobile {
+	display: block;
+	}
+	.nav_content {
+		width: 92%;
+	}
+	.footer_cont .info span{
+		font-size: 1.4rem;
+		line-height: 2.5rem;
+	}
+	.footer_cont .info{
+		width: 69%;
+		margin-top: -0.5rem;
+		text-align: left;
+	}
+	.footer_cont .ewm{
+		width: 31%;
+	}
+	.footer_cont .info span:last-child{
+		position: absolute;
+		left: 0;
+		margin-top: 1.5rem;
+	}
+	.footer_cont,.footer_cont .ewm {
+		position: relative;
+	}
+	.footer_cont .ewm b{
+	    margin-top: -10.2rem;
+	    font-size: 1.5rem;
+	}
+	.footer_cont .info span:first-child {
+    	margin-right: 2rem;
+	}
+	.footer_cont .info span:last-child {
+		line-height: 2rem;
+		text-align: center;
+	}
+	.footer{
+		padding-bottom: 7rem;
+	}
+	
+}
+@media (max-width:600px ) and (min-width:500px){
+	.footer_cont .info span:last-child{
+		position: static;
+	}
+}
+@media (max-width: 460px){
+	.slider_box{
+		width: 33%;
+	}
+	.footer_cont .ewm b{
+	    margin-top: -9.2rem;
+	    font-size: 1.5rem;
+	}
+	.footer_cont .ewm img{
+		width: 7rem;
+	}
+	.footer_cont .info span:last-child{
+		margin-top: 1rem;
+	}
+	.slider_box li a{
+		height: 3.5rem;
+		line-height: 3.5rem;
+	}
+} 
+@media (max-width: 320px){
+	.footer_cont .ewm{
+		margin-left: -1rem;
+	}
+	.footer_cont .ewm b{
+		width: 115%;
+	}
+}

@@ -5,7 +5,7 @@ $(function(){
 		$(".newTo-top").hover(function(){
 		$(this).css({
 			"background":"none",
-			"backgroundColor":"#d6b324"
+			"backgroundColor":"#73a3f1"
 		})
 		$(this).html("顶部")
 	},function(){
@@ -44,4 +44,8 @@ $(function(){
 	$(".more_btn").click(function(){
 		$(".slider_box").slideToggle(100);
 	})
+	//3.手机端滚动条滚动时影藏下拉菜单
+$(window).scroll(function(){
+	$(".slider_box").hide()
+})
 })
